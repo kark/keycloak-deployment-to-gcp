@@ -96,5 +96,4 @@ curl -v --insecure https://$DOMAIN_NAME
 ```bash
 gcloud container clusters delete $CLUSTER --zone $REGION
 gcloud compute addresses delete ip-keycloak --global
-gcloud certificate-manager certificates delete keycloak
 ```
