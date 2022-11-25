@@ -2,7 +2,7 @@
 
 [Official docs](https://www.keycloak.org/getting-started/getting-started-kube) provide a way to deploy `Keycloak` to local `minikube` cluster. This however doesn't allow to test integration with 3rd-party services, as the URLs are not publicly resolvable. This is the MVP version of the `Keycloak` deployment ready for testing any integrations.
 
-Prerequisite:
+Prerequisites:
 
 - gcp account
 - `kubectl` installed
@@ -91,7 +91,7 @@ You may verify if all is set up correctly with:
 curl -v --insecure https://$DOMAIN_NAME
 ```
 
-7. Cleanup
+8. Cleanup
 
 ```bash
 gcloud container clusters delete $CLUSTER --zone $REGION
